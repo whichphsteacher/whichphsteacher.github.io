@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title>Results</title>
+		<link rel='stylesheet' type="text/css" href="./resultStyle.css" />
+		<script type="text/javascript" src="./x/jquery-3.1.1.min.js"></script>
+	<body>
+		<div style="margin:20px;">
+			<a id='returnLink' href="./index.html">&lsaquo;&nbsp;&nbsp;Back to test</a>
+		</div>
+		<div id='results'>
+			<h1>You Are:  <span style="color:#18AFF5;">Mr. Staurs</span>
+			<br/>aka<br/>
+			<span style="color:#18AFF5;">Crushin' on Clinton</span></h1>
+			<br/>
+			<p>You have a weird thing for Hillary Clinton.  You like her.  Not as a politician.  You like her on a weird, creepy, personal, borderline sexual level and will do <i><b>anything</b></i> to defend her actions.</p>
+		</div>
+		<p id="signature" align='left'><img style='height:1em;' src='./img/charlotte.png' /> made in Charlotte</p>
+		<script>
+			$('#returnLink').hover(function() {
+				$(this).css('color', '#080808');
+			});
+			$('#returnLink').mouseout(function() {
+				$(this).css('color', '#18AFF5');
+			});
+		</script>
+	</body>
+</html>
