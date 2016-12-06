@@ -14,7 +14,8 @@
 		<table style="width:100%;">
 			<tr>
 				<td style="width:20%;"></td>
-				<td id='rectangle'>
+				<td id='srect'>
+					<div id='rectangle'>
 					<a id='quizshow' onclick='populate()'>Show Quiz &rsaquo;</a>
 					<!-- <form action='redirect.html'>
 
@@ -228,17 +229,18 @@
 
 						<input type="submit" value="Submit">
 					</form> -->
+					</div><br/>
+						<a style='text-align:right;' href='./list.html'>See Possible Results&nbsp;&nbsp;&rsaquo;</a>
 				</td>
 				<td style="width:20%;"></td>
 			</tr>
 		</table>
 		<br/><br/>
-		<p align='right' href='./list.html'>See Possible Results&nbsp;&nbsp;&lsaquo;</p>
 		<script>
-			$('#quizshow').hover(function() {
+			$('a').hover(function() {
 				$(this).css('color', '#080808');
 			});
-			$('#quizshow').mouseout(function() {
+			$('a').mouseout(function() {
 				$(this).css('color', '#18AFF5');
 			});
 		</script>
