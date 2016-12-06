@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<title>Which PHS Teacher Are You?</title>
+		<link rel='stylesheet' type="text/css" href="./style.css"/>
+		<script type='text/javascript' src="./x/jquery-3.1.1.min.js"></script>
+		<script type='text/javascript' src="./calcscript.js"></script>
+		<script type='text/javascript' src="./fillrect.js"></script>
+	</head>
+
+	<body>
+		<br/><br/>
+		<h1>Which PHS teacher are you?</h1>
+		<h2>Take this test to find out</h2>
+		<table style="width:100%;">
+			<tr>
+				<td style="width:20%;"></td>
+				<td id='rectangle'>
+					<a href='./marva.html'>Marva Hutchinson</a><br/><br/>
+					<a href='./harrill.html'>Dr. Tracey Harrill</a><br/><br/>
+					<a href='./giannoulis.html'>Ms. Giannoulis</a><br/><br/>
+					<a href='./staurs'>Mr. Staurs</a><br/><br/>
+					<a href='./vincent.html'>Mr. Vincent</a><br/><br/>
+				</td>
+				<td style="width:20%;"></td>
+			</tr>
+		</table>
+		<br/><br/>
+		<p align='right' href='./index.html'>&lsaquo;&nbsp;&nbsp;Back To Quiz</p>
+		<script>
+			$('#quizshow').hover(function() {
+				$(this).css('color', '#080808');
+			});
+			$('#quizshow').mouseout(function() {
+				$(this).css('color', '#18AFF5');
+			});
+		</script>
+	</body>
+<html>
