@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title>Results</title>
+		<link rel='stylesheet' type="text/css" href="./resultStyle.css" />
+		<script type="text/javascript" src="./x/jquery-3.1.1.min.js"></script>
+	<body>
+		<div style="margin:20px;">
+			<a id='returnLink' href="./index.html">&lsaquo;&nbsp;&nbsp;Back to test</a>
+		</div>
+		<div id='results'>
+			<h1>You Are:  <span style="color:#18AFF5;">Mr. Potter</span>
+			<br/>aka<br/>
+			<span style="color:#18AFF5;">The Ice King</span></h1>
+			<br/>
+			<p>You're cold, you're dead inside, and every time you laugh an angel loses its wings. The only time you are nice is shortly after a nice person dies, after which you absorb their soul and briefly take on their kindness for a few seconds before you convert it into more fuel for sacrifices to the dark arts.</p>
+		</div>
+		<p id="signature" align='left'><img style='height:1em;' src='./img/charlotte.png' /> made in Charlotte</p>
+		<script>
+			$('#returnLink').hover(function() {
+				$(this).css('color', '#080808');
+			});
+			$('#returnLink').mouseout(function() {
+				$(this).css('color', '#18AFF5');
+			});
+		</script>
+	</body>
+</html>

@@ -52,7 +52,8 @@ function calcs() {
 	var q26 = GetIntFromAgreement(GetQueryVariable("question26"));
 
 	var marva = q1 + q3 + q4 + (-q5) + q6 + q7 + (-q13) + (2 * q15) + (-q16) + (q17) + q20 + (-q21) + (-q24) + q26;
-	var vincent = (-q1) + (-q3) + q5 + (-q7) + (-q8) + q11 + q13 + q16 + (-q17) + (-q20) + q21 + q24 + (-q25) + (-q26);
+	var vincent = 0;
+	var potter = 0;
 	var tracey = q1 + q4 + q6 + q9 + q11 + q15 + q20 + (-q21) + (3 * q22) + (-q23) + (-q23);
 	var giannoulis = (2 * q2) + (-q4) + (-q5) + (-q7) + q8 + (2 * q9) + (-q10) + q11 + q13 + q16 + (-q18) + (-q20) + q21 + (-2 * q23) + q24;
 	var englishdept = (2 * q1) + (-q5) + q9 + (-q13) + q14 + (-q16) + q17 + q19 + q20 + (-2 * q21) + (-q24);
