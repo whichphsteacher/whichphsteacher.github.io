@@ -51,17 +51,17 @@ function calcs() {
 	var q25 = GetIntFromAgreement(GetQueryVariable("question25"));
 	var q26 = GetIntFromAgreement(GetQueryVariable("question26"));
 
-	var marva = q1 + q3 + q4 + (-q5) + q6 + q7 + (-q13) + (2 * q15) + (-q16) + (q17) + q20 + (-q21) + (-q24) + q26;
+	var marva = q1 + q3 + q4 + (-q5) + q6 + q7 + (-q13) + (2 * q15) + (-q16) + (q17) + (2 * q19) + q20 + (-q21) + (-q24) + q26 + q27 + (-q28);
 	var vincent = 0;
-	var potter = 0;
-	var tracey = q1 + q4 + q6 + q9 + q11 + q15 + q20 + (-q21) + (3 * q22) + (-q23) + (-q23);
-	var giannoulis = (2 * q2) + (-q4) + (-q5) + (-q7) + q8 + (2 * q9) + (-q10) + q11 + q13 + q16 + (-q18) + (-q20) + q21 + (-2 * q23) + q24;
-	var englishdept = (2 * q1) + (-q5) + q9 + (-q13) + q14 + (-q16) + q17 + q19 + q20 + (-2 * q21) + (-q24);
-	var staurs = q4 + q6 + q8 + q10 + (5 * q12) + q14 + (-q24) + q25;
-	var altmeyer = (-q3) + (-q4) + (-q5) + (-q7) + q11 + (2 * q13) + q16 + (2 * q17) + q18 + q24 + (-q26);
-	var church = q1 + (-q5) + (-2 * q9) + (-q11) + (2 * q14) + (-2 * q18) + q20 + (-q23) + (2 * q25);
+	var potter = (-q1) + q3 + 6 + (2 * q7) + (-q8) + q9 + (-q10) + (2 * -q13) + q15 + (-q16) + (2 * q17) + (-q18) + q20 + (-2 * q21) + q22 + (3 * q24) + q25 + q26 + q27 + (-q28);
+	var tracey = q1 + q4 + q6 + q9 + q11 + q15 + q20 + (-q21) + (3 * q22) + (-q23) + (-q23) + q27 + (-q28);
+	var giannoulis = (2 * q2) + (-q4) + (-q5) + (-q7) + q8 + (2 * q9) + (-q10) + q11 + q13 + q16 + (-q18) + (-q20) + q21 + (-2 * q23) + q24 + q27 + q28;
+	var englishdept = (2 * q1) + (-q5) + q9 + (-q13) + q14 + (-q16) + q17 + q19 + q20 + (-2 * q21) + (-q24) + (-2 *q28);
+	var staurs = q4 + q6 + q8 + q10 + (5 * q12) + q14 + (-q24) + q25 + (-q27) + (-q28);
+	var altmeyer = (-q3) + (-q4) + (-q5) + (-q7) + q11 + (2 * q13) + q16 + (2 * q17) + q18 + q24 + (-q26) + q28;
+	var church = q1 + (-q5) + (-2 * q9) + (-q11) + (2 * q14) + (-2 * q18) + q20 + (-q23) + (2 * q25) + (-q28);
 
-	var result = Math.max(marva, vincent, tracey, giannoulis, englishdept, staurs);
+	var result = Math.max(marva, altmeyer, potter, vincent, tracey, giannoulis, englishdept, staurs);
 
 	//var a1 = '<a href="';
 	//var a2 = '">See My Results &nbsp;&nbsp;&rsaquo;</a>';
@@ -71,26 +71,29 @@ function calcs() {
 		a15 = "marva.html";
 	}
 	else if (result == altmeyer) {
-		a15 = "altemeyer.html"
+		a15 = "altemeyer.html";
 	}
 	else if (result == vincent) {
-		a15 = "vincent.html"
+		a15 = "vincent.html";
 	}
 	else if (result == tracey) {
-		a15 = "harrill.html"
+		a15 = "harrill.html";
+	}
+	else if (result == potter) {
+		a15 = "potter.html";
 	}
 	else if (result == giannoulis) {
-		a15 = "giannoulis.html"
+		a15 = "giannoulis.html";
 	}
 	else if (result == englishdept) {
-		a15 = "englishdept.html"
+		a15 = "englishdept.html";
 	}
 	else if (result == staurs) {
-		a15 = "staurs.html"
+		a15 = "staurs.html";
 	}
 	/*
 	else if (result == church) {
-		a15 = "church.html"
+		a15 = "church.html";
 	}
 	*/
 
