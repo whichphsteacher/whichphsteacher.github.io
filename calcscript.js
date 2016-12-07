@@ -50,6 +50,8 @@ function calcs() {
 	var q24 = GetIntFromAgreement(GetQueryVariable("question24"));
 	var q25 = GetIntFromAgreement(GetQueryVariable("question25"));
 	var q26 = GetIntFromAgreement(GetQueryVariable("question26"));
+	var q27 = GetIntFromAgreement(GetQueryVariable("question27"));
+	var q28 = GetIntFromAgreement(GetQueryVariable("question28"));
 
 	var marva = q1 + q3 + q4 + (-q5) + q6 + q7 + (-q13) + (2 * q15) + (-q16) + (q17) + (2 * q19) + q20 + (-q21) + (-q24) + q26 + q27 + (-q28);
 	var vincent = 0;
